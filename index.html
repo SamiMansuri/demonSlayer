@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Demon Slayer</title>
+  </head>
+  <body>
+    <main>
+      <section class="wrapper">
+        <div class="title">
+          <h1 id="title-name">Demon Slayers</h1>
+          <!-- <button class="mode" id="mode" onclick="changeMode()">change</button> -->
+        </div>
+        <div class="review">
+          <div class="img-container">
+            <img
+              draggable="false"
+              src=""
+              alt="person_image"
+              id="person_image"
+              class="normal-image"
+            />
+            <img
+              draggable="false"
+              src=""
+              alt="person_image"
+              id="person_image_hvr"
+              class="hover-image"
+            />
+          </div>
+          <h3 id="hero"></h3>
+          <p id="type"></p>
+          <p id="info"></p>
+          <div class="btn-container">
+            <button class="prev-btn">
+              <img
+                class="prev-btn-img"
+                width="25px"
+                height="25px"
+                src="images/next.png"
+                alt="prev"
+              />
+            </button>
+            <button class="next-btn">
+              <img
+                width="25px"
+                height="25px"
+                src="images/next.png"
+                alt="next"
+              />
+            </button>
+          </div>
+          <input type="text" id="char_name" placeholder="Enter name.." />
+          <button id="search_btn" onclick="showName()"></button>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
